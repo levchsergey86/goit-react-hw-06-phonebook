@@ -1,0 +1,13 @@
+.AddContactButton {
+  padding: 5px;
+  font-style: normal;
+  margin-left: 20px;
+  font-weight: 600;
+  background-color: chartreuse;
+  margin-top: 10px;
+}
+
+.input {
+  padding: 5px;
+  min-width: 300px;
+}

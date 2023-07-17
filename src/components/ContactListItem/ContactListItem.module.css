@@ -1,0 +1,15 @@
+.deleteButton {
+  padding: 5px;
+  font-style: normal;
+  margin-left: 20px;
+  font-weight: 600;
+  background-color: red;
+  color: white;
+}
+
+.listItem {
+  font-style: normal;
+  margin-bottom: 10px;
+  font-weight: 600;
+  margin-top: 10px;
+}
