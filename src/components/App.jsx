@@ -17,7 +17,7 @@ const App = () => {
     const storedContacts = localStorage.getItem('contacts');
     if (storedContacts) {
       const parsedContacts = JSON.parse(storedContacts);
-      if (parsedContacts.length > 0 && contacts.length === 0) { // Проверка наличия контактов в Redux-хранилище
+      if (parsedContacts.length > 0 && contacts.length === 0) { 
         dispatch(addContact(parsedContacts));
       }
     }
