@@ -17,11 +17,11 @@ const App = () => {
     const storedContacts = localStorage.getItem('contacts');
     if (storedContacts) {
       const parsedContacts = JSON.parse(storedContacts);
-      if (parsedContacts.length > 0) {
+      if (parsedContacts.length > 0 && contacts.length === 0) { // Проверка наличия контактов в Redux-хранилище
         dispatch(addContact(parsedContacts));
       }
     }
-  }, [dispatch]);
+  }, [dispatch, contacts]);
 
   useEffect(() => {
     localStorage.setItem('contacts', JSON.stringify(contacts));
